@@ -103,7 +103,7 @@ Definitions of commands implemented by this plugin in the `onCommand()` of the `
 commands:
  example:
   description: Example command
-  usage: "Usage: /example"
+  usage: "/example"
   permission: exampleperm.command.example
 ```
 
