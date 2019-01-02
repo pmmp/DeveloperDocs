@@ -120,13 +120,13 @@ Example:
 permissions:
  exampleperm:
   description: "Allows the user to do all example things"
-   default: true # can also be false, or op
-   children:
-     exampleperm.command:
-      description: "Allows the user to run all example commands"
+  default: true # can also be false, or op
+  children:
+   exampleperm.command:
+    description: "Allows the user to run all example commands"
+    default: true # can also be false, or op
+    children:
+     exampleperm.command.example:
+      description: "Allows the user to run the example command"
       default: true # can also be false, or op
-      children:
-        exampleperm.command.example:
-         description: "Allows the user to run the example command"
-         default: true # can also be false, or op
 ```
