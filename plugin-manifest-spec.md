@@ -98,10 +98,35 @@ List of Minecraft PE network protocol versions the plugin is compatible with. Pl
 Type: array
 
 Definitions of commands implemented by this plugin in the `onCommand()` of the `PluginBase`.
-TODO: examples
+Example:
+```yml
+commands:
+ example:
+  description: Example command
+  usage: "/example"
+  aliases: 
+   - ex
+   - examp
+  permission: exampleperm.command.example
+  permission-message: "You do not have permission to use this example command!"
+```
 
 ### `permissions`
 Type: array
 
 Tree of permissions defined by this plugin, usually used for commands.
-TODO: examples
+Example: 
+```yml
+permissions:
+ exampleperm:
+  description: "Allows the user to do all example things"
+  default: true # can also be false, or op
+  children:
+   exampleperm.command:
+    description: "Allows the user to run all example commands"
+    default: true # can also be false, or op
+    children:
+     exampleperm.command.example:
+      description: "Allows the user to run the example command"
+      default: true # can also be false, or op
+```
