@@ -6,6 +6,7 @@ This repository contains documentation and reference pages for PocketMine-MP plu
 - [API versioning system](/api-version-spec.md)
 - [Plugin manifest: what fields are used in a plugin.yml](/plugin-manifest-spec.md)
 - [Events system: how event handling works](/events-spec.md)
+- [Setting up your IDE](/ide-setup.md)
 
 ## External development resources
  - [Doxygen](https://apidoc.pmmp.io) - API documentation for latest release
