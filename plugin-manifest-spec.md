@@ -68,17 +68,17 @@ Type: string
 When in the startup sequence to prefer loading this plugin. Currently can be one of `STARTUP` or `POSTWORLD`. See plugin load order. (TODO: add a link here)
 
 ### `depend`
-Type: string[]
+Type: `string` or `string[]`
 
 List of plugins that this plugin depends on. Plugin will not load if any of these plugins are missing.
 
 ### `softdepend`
-Type: string[]
+Type: `string` or `string[]`
 
 List of plugins that the plugin can **optionally** depend on. Plugins in this list must load prior to the plugin soft-depending on them.
 
 ### `loadbefore`
-Type: string[]
+Type: `string` or `string[]`
 
 List of plugins that this plugin must load prior to. Works like a soft-dependency in reverse.
 
