@@ -25,8 +25,8 @@ This plugin format is most commonly used because it is just as feature-complete 
 
 ### Loading
 1. If you don't have the `DevTools` plugin, [download its phar file](https://github.com/pmmp/PocketMine-DevTools/releases) and put it in your `plugins` folder.
-- Move the folder containing the plugin's source code into your `plugins` folder. The plugin's folder should contain a `plugin.yml` file and a `src` folder.
-- Restart the server and the plugin will be loaded.
+2. Move the folder containing the plugin's source code into your `plugins` folder. The plugin's folder should contain a `plugin.yml` file and a `src` folder.
+3. Restart the server and the plugin will be loaded.
 
 ## Frequently Asked Questions
 ### Does the `/reload` command reload plugin source code?
