@@ -7,6 +7,7 @@ This repository contains documentation and reference pages for PocketMine-MP plu
 - [Plugin manifest: what fields are used in a plugin.yml](/plugin-manifest-spec.md)
 - [Loading non-phar plugins](/loading-non-phar-plugins.md)
 - [Events system: how event handling works](/events-spec.md)
+- [Inventory Transactions](/inventory-transactions.md)
 
 ## External development resources
  - [Doxygen](https://apidoc.pmmp.io) - API documentation for latest release
