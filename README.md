@@ -5,7 +5,7 @@ This repository contains documentation and reference pages for PocketMine-MP plu
 ## Contents
 - [API versioning system](/api-version-spec.md)
 - [Plugin manifest: what fields are used in a plugin.yml](/plugin-manifest-spec.md)
-- [Loading non-phar plugins](/loading-non-phar-plugins.md)
+- [Plugin formats](/plugin-formats.md)
 - [Events system: how event handling works](/events-spec.md)
 - [Inventory Transactions](/inventory-transactions.md)
 
