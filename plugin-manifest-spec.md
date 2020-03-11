@@ -93,6 +93,12 @@ Type: `int` or `int[]`
 
 List of Minecraft PE network protocol versions the plugin is compatible with. Plugin will fail to load if the current server protocol version is not in this list.
 
+### `os` (PocketMine-MP >= 3.12.0)
+Type: `string` or `string[]`
+
+List of operating systems that the plugin will run on. If not present, the plugin will load on any OS.
+Possible values include `win`, `mac`, `linux`, `android`, `ios`, `bsd`.
+
 ## Misc
 ### `commands`
 Type: `array`
