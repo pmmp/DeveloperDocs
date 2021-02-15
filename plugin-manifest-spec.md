@@ -120,7 +120,7 @@ commands:
 ### `permissions`
 Type: `array`
 
-Tree of permissions defined by this plugin, usually used for commands.
+List of permissions defined by this plugin, usually used for commands.
 Example:
 ```yml
 permissions:
@@ -128,3 +128,5 @@ permissions:
     description: "Allows the user to run the example command"
     default: true # can also be false, or op
 ```
+Note: While it is possible to nest permission declarations in PocketMine-MP versions prior to 4.0.0, it's recommended _not_ to do this because it causes unfixable bugs in permission defaults. (In effect, nested permissions are just a very weird and confusing way to declare permission groups.)
+Instead, you should give your permissions consistent names so that permission plugins can pattern-match them.
