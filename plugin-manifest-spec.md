@@ -32,7 +32,7 @@ Fully-qualified name of the main class. This class must meet the following crite
 ### `api`
 Type: `string` or `string[]`
 
-The API version(s) that the plugin is compatible with. If the plugin's API version is not compatible with that of the server, the server will refuse to load the plugin. This should contain the **minimum** supported minor & patch version supported by the plugin for each major version it supports. More info on API versioning can be found [here](https://devdoc.pmmp.io/api-version-spec.html).
+The API version(s) that the plugin is compatible with. If the plugin's API version is not compatible with that of the server, the server will refuse to load the plugin. More info on API versioning can be found [here](https://devdoc.pmmp.io/api-version-spec.html).
 
 # Optional fields
 ## Cosmetic
