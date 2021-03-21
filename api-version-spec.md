@@ -18,6 +18,7 @@ PocketMine-MP uses a condition of `==.>=.>=` (or `eq.ge.ge` if you prefer `bash`
 The PocketMine-MP developers strive to ensure that any non-major version does not break API compatibility with plugins. This means that a plugin written to target `3.1.1` should also work on any future `3.x.y` version, but **not** `4.0.0` or any future major versions.
 
 ### Examples
+
 | Server version | Plugin version | Compatible | Reason |
 |:---------------|:---------------|:----------:|:-------|
 | 4.0.0 | 3.0.0 | NO | Major versions are different. |
