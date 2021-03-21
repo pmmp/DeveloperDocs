@@ -113,7 +113,6 @@ commands:
     description: Example command
     # Shown to the user if they type the command in incorrectly
     usage: "/example"
-    # Command aliases
     aliases:
       - ex
       - examp
@@ -130,9 +129,7 @@ List of permissions defined by this plugin, usually used for commands.
 Example:
 ```yml
 permissions:
-  # Permission node
   exampleperm.command.example:
-    # A description of what the permission allows or disallows
     description: "Allows the user to run the example command"
     # Default state of the permission. Explanation of each value:
     # op: only op players have this permission by default
