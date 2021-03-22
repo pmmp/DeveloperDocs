@@ -32,7 +32,7 @@ Fully-qualified name of the main class. This class must meet the following crite
 ### `api`
 Type: `string` or `string[]`
 
-The API version(s) that the plugin is compatible with. If the plugin's API version is not compatible with that of the server, the server will refuse to load the plugin. This should contain the **minimum** supported minor & patch version supported by the plugin for each major version it supports.
+The API version(s) that the plugin is compatible with. If the plugin's API version is not compatible with that of the server, the server will refuse to load the plugin. More info on API versioning can be found [here](https://devdoc.pmmp.io/api-version-spec.html).
 
 # Optional fields
 ## Cosmetic
@@ -107,13 +107,18 @@ Definitions of commands implemented by this plugin in the `onCommand()` of the `
 Example:
 ```yml
 commands:
+  # The name of the command the user will type to execute it
   example:
+    # Description that will be shown in help command
     description: Example command
+    # Shown to the user if they type the command in incorrectly
     usage: "/example"
     aliases:
       - ex
       - examp
+    # Permission required to run the command
     permission: exampleperm.command.example
+    # Shown to the user if they don't have permission to run the command
     permission-message: "You do not have permission to use this example command!"
 ```
 
@@ -126,7 +131,11 @@ Example:
 permissions:
   exampleperm.command.example:
     description: "Allows the user to run the example command"
-    default: true # can also be false, or op
+    # Default state of the permission. Explanation of each value:
+    # op: only op players have this permission by default
+    # true: everyone has this permission by default
+    # false: no one has this permission by default
+    default: true
 ```
 Note: While it is possible to nest permission declarations in PocketMine-MP versions prior to 4.0.0, it's recommended _not_ to do this because it causes unfixable bugs in permission defaults. (In effect, nested permissions are just a very weird and confusing way to declare permission groups.)
 Instead, you should give your permissions consistent names so that permission plugins can pattern-match them.
